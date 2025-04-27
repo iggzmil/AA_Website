@@ -32,7 +32,7 @@
     transition: all 0.3s ease !important;
     position: absolute !important;
     bottom: 20px !important;
-    right: 20px !important;
+    right: 90px !important; /* Moved from 20px to 90px to avoid overlap with back-to-top button */
     z-index: 9999 !important;
     width: 60px !important; /* Fixed width */
     height: 60px !important; /* Fixed height */

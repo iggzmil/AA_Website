@@ -1,0 +1,23 @@
+/**
+ * Contact and Footer Color Fix
+ * This file adjusts text colors in the contact and footer sections
+ */
+
+/* Make text black in the Contact Us section */
+#contact-section p,
+#contact-section h5,
+.feature-box-3 .content h5,
+.feature-box-3 .content p,
+.opening-hours h6,
+.opening-hours li,
+.opening-hours li strong,
+.opening-hours li span:not(.text-red) {
+  color: #000000 !important;
+}
+
+/* Make text white in the footer section */
+.footer-3 p,
+.copyright p,
+.copyright a:not(.text-red) {
+  color: #ffffff !important;
+}

@@ -32,7 +32,7 @@
 }
 
 .feature-box-container .feature-box p {
-  color: #666666;
+  color: #000000; /* Changed to black for better readability */
   line-height: 1.6;
 }
 

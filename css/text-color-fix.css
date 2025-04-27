@@ -1,0 +1,44 @@
+/**
+ * Text Color Fix
+ * This file ensures consistent text color in specific sections
+ */
+
+/* Make text black in the About Us section */
+.overview-content p,
+.overview-content strong {
+  color: #000000 !important;
+}
+
+/* Make text black in the feature-box-3 content */
+.feature-box-3 .content p {
+  color: #000000 !important;
+}
+
+/* Make text black in the Why Choose Us section */
+.why-choose p,
+.why-choose .feature-box .content p {
+  color: #000000 !important;
+}
+
+/* Make text black in the Contact Us section */
+#contact-section p,
+#contact-section h5,
+.feature-box-3 .content h5,
+.opening-hours h6,
+.opening-hours li,
+.opening-hours li strong,
+.opening-hours li span:not(.text-red) {
+  color: #000000 !important;
+}
+
+/* Make text white in the footer section */
+.footer-3 p,
+.copyright p,
+.copyright a:not([href="http://www.aaa-city.com/"]) {
+  color: #ffffff !important;
+}
+
+/* Keep AAA.City link red */
+.copyright a[href="http://www.aaa-city.com/"] {
+  color: #db2d2e !important;
+}
