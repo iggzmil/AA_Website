@@ -29,7 +29,6 @@ $(document).ready(function() {
         minimized: !shouldOpenChat, // Auto-expand if openChat=true
         minimizedContent: `
             <i class="flaticon-customer-service"></i>
-            <span>Hey 👋 Need help? Let's chat!</span>
         `
     });
 
