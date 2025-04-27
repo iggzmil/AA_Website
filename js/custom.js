@@ -63,6 +63,9 @@ var POTENZA = {};
   POTENZA.preloader = function () {
        $("#load").fadeOut();
        $('#loading').delay(800).fadeOut('slow'); // Show for 800ms before fading
+
+       // Force scroll to top on page load/reload (fixes mobile browser issue)
+       window.scrollTo(0, 0);
    };
 
 /*************************

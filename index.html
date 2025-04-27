@@ -80,6 +80,26 @@
   <!-- text color fix -->
   <link rel="stylesheet" type="text/css" href="css/text-color-fix.css" />
 
+  <!-- Force scroll to top on page load/reload -->
+  <script>
+    // This script runs immediately when the page starts loading
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    };
+
+    // This runs when the DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      window.scrollTo(0, 0);
+    });
+
+    // This runs when everything is loaded
+    window.onload = function() {
+      setTimeout(function() {
+        window.scrollTo(0, 0);
+      }, 100);
+    };
+  </script>
+
 </head>
 
 <body>
