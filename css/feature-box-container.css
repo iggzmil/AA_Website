@@ -1,0 +1,44 @@
+/**
+ * Feature Box Container Styles
+ * This file adds container styling to the feature boxes in the welcome section
+ */
+
+/* Container for feature boxes */
+.feature-box-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.feature-box-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #db2d2e;
+}
+
+/* Adjust the icon size and spacing */
+.feature-box-container .feature-box .icon i {
+  margin-bottom: 15px;
+}
+
+/* Adjust heading and text for better readability */
+.feature-box-container .feature-box h6 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-box-container .feature-box p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .feature-box-container {
+    margin-bottom: 20px;
+  }
+}
