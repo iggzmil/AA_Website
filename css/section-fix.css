@@ -1,0 +1,48 @@
+/**
+ * Section Title Fixes
+ * This file ensures consistent section title styling
+ */
+
+/* Ensure separator is visible in all sections */
+.section-title .separator:before,
+.section-title .separator:after {
+    background: #db2d2e !important;
+    display: block !important;
+    content: "" !important;
+}
+
+.section-title .separator:before {
+    width: 50px !important;
+    height: 1px !important;
+    margin-bottom: 6px !important;
+}
+
+.section-title .separator:after {
+    width: 100px !important;
+    height: 1px !important;
+}
+
+/* Hover effects for separator */
+section:hover .section-title .separator:before {
+    width: 100px !important;
+    left: 0 !important;
+}
+
+section:hover .section-title .separator:after {
+    width: 50px !important;
+    left: 0 !important;
+}
+
+/* Consistent spacing for section titles */
+.section-title {
+    margin-bottom: 60px !important;
+    text-align: center !important;
+}
+
+/* Ensure proper text styling */
+.section-title h3 {
+    font-size: 36px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}

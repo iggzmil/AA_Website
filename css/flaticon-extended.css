@@ -1,0 +1,18 @@
+/*
+  Flaticon Extended - Audio Icons
+  This file has been emptied as the icons were never used.
+  The fontello folder has been removed.
+*/
+
+/*
+  All styling for flaticon-ext- classes has been removed
+  as these classes were never used in the HTML.
+
+  The only styling kept is for the general feature-box icon
+  to ensure compatibility with existing icons.
+*/
+
+/* Fix for icon centering in feature boxes */
+.feature-box .icon {
+  text-align: center;
+}

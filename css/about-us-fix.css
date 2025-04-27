@@ -1,0 +1,39 @@
+/**
+ * About Us Section Text Color Fix
+ * This file ensures all text in the About Us section is black
+ */
+
+/* Target the About Us section */
+.overview.bg-16 .section-title h3 {
+    color: #000000 !important;
+}
+
+.overview.bg-16 .overview-content h2.text-red {
+    color: #db2d2e !important;
+}
+
+.overview.bg-16 .overview-content strong,
+.overview.bg-16 .overview-content p,
+.overview.bg-16 .overview-content b {
+    color: #000000 !important;
+}
+
+/* Feature boxes in About Us section */
+.overview.bg-16 .feature-box-3 .content h6 {
+    color: #000000 !important;
+}
+
+.overview.bg-16 .feature-box-3 .content p {
+    color: #000000 !important;
+}
+
+/* Icon color in About Us section */
+.overview.bg-16 .feature-box-3 .icon i {
+    color: #000000 !important;
+}
+
+/* Ensure separator is visible with red color */
+.overview.bg-16 .section-title .separator:before,
+.overview.bg-16 .section-title .separator:after {
+    background: #db2d2e !important;
+}

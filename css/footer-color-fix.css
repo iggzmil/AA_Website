@@ -1,0 +1,14 @@
+/**
+ * Footer Color Standardization
+ * This file ensures the footer uses a consistent black color
+ */
+
+/* Set the main footer background to pure black */
+.footer-3 {
+  background: #000000 !important;
+}
+
+/* Set the copyright section background to pure black as well */
+.footer-3 .copyright {
+  background: #000000 !important;
+}

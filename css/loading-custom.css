@@ -1,0 +1,33 @@
+/**
+ * Custom Loading Animation Styles
+ */
+
+/* Adjust the loading background */
+#loading {
+  background-color: #ffffff;
+}
+
+/* Style the loading image */
+#loading-center img {
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(219, 45, 46, 0.2)); /* Red shadow matching brand color */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Add a pulsing animation to the loading image */
+@keyframes pulse {
+  0% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.1); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
+/* Add a subtle fade-in effect when the page loads */
+body {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

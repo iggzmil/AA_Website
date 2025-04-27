@@ -1,0 +1,42 @@
+/**
+ * Ferrari Section Fixes
+ * This file contains fixes for the Ferrari section
+ */
+
+/* Overview image styling */
+.overview-image {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.overview-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix for overview content */
+.overview-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Fix for section title */
+.section-title-la-page {
+    margin-bottom: 30px;
+}
+
+/* Fix for specifications title */
+.specifications .title {
+    font-weight: 600;
+    color: #db2d2e;
+}

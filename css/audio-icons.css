@@ -1,0 +1,38 @@
+/*
+  Audio Icons CSS
+  This file provides styling for the new audio icons
+*/
+
+/* Container for audio icons */
+.audio-icon-container {
+  width: 80px;
+  height: 80px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/* Icon styling */
+.audio-icon-container i {
+  font-size: 30px;
+  color: #969696;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+/* Hover effects */
+.feature-box:hover .audio-icon-container {
+  background: #db2d2e;
+}
+
+.feature-box:hover .audio-icon-container i {
+  color: #ffffff;
+}

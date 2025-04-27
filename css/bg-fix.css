@@ -1,0 +1,22 @@
+/**
+ * Background Color Fix
+ * This file ensures consistent background colors across all devices
+ */
+
+/* Force the background color to be #f6f6f6 for the overview section with bg-16 class */
+.overview.bg-16 {
+    background-color: #f6f6f6 !important;
+}
+
+/* Ensure the background image is still visible */
+.bg-16 {
+    background-image: url(../images/bg/16.jpg) !important;
+    background-clip: initial !important;
+    background-color: #f6f6f6 !important;
+    background-origin: initial !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    z-index: 0 !important;
+    background-size: cover !important;
+}

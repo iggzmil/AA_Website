@@ -1,0 +1,77 @@
+/**
+ * Auto Acoustics Image Zoom Effect
+ * This file contains styles for the image zoom effect in the "Our Work in Action" section
+ */
+
+/* Container for the image with zoom effect */
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Image zoom effect */
+.zoom-container img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hover effect */
+.zoom-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Zoom effect when active (clicked) */
+.zoom-container.active img {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+/* Overlay for the zoomed image */
+.zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+/* Zoomed image */
+.zoom-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button */
+.zoom-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoom-close:hover {
+    background-color: rgba(219, 45, 46, 0.8);
+}

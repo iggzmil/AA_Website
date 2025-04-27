@@ -1,0 +1,46 @@
+/* 
+ * Footer Social Media Icons Fix
+ * This file fixes the social media icons in the footer after Bootstrap update
+ */
+
+/* Fix for Font Awesome icons in the footer */
+.footer-3 .social ul li a i.fa-facebook:before {
+  content: "\f39e";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.footer-3 .social ul li a i.fa-twitter:before {
+  content: "\f099";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.footer-3 .social ul li a i.fa-pinterest-p:before {
+  content: "\f231";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.footer-3 .social ul li a i.fa-dribbble:before {
+  content: "\f17d";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.footer-3 .social ul li a i.fa-instagram:before {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.footer-3 .social ul li a i.fa-google-plus:before {
+  content: "\f0d5";
+  font-family: "Font Awesome 6 Brands";
+}
+
+/* General fix for Font Awesome 4 to 6 compatibility */
+.fa {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}

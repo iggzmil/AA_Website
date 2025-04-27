@@ -1,0 +1,23 @@
+/**
+ * Auto Acoustics Button Fix
+ * This file contains fixes for button styling
+ */
+
+/* Ensure buttons stay red when active/focus */
+.button.button-theme:active,
+.button.button-theme:focus,
+.button.button-theme:hover {
+    background-color: #db2d2e !important;
+    color: #ffffff !important;
+    border-color: #db2d2e !important;
+}
+
+/* Add transition for smoother color changes */
+.button.button-theme {
+    transition: all 0.3s ease !important;
+}
+
+/* Fix for active state */
+.button.button-theme:active {
+    opacity: 0.9 !important;
+}

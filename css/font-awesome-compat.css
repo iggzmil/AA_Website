@@ -1,0 +1,35 @@
+/* 
+ * Font Awesome 4 to Font Awesome 6 Compatibility CSS
+ * This file provides backward compatibility for Font Awesome 4 classes
+ */
+
+/* Basic compatibility for fa class */
+.fa {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* Social media icons used in the footer */
+.fa-facebook:before {
+  content: "\f39e";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-google-plus:before {
+  content: "\f0d5";
+}
