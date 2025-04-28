@@ -7,20 +7,24 @@
 .car-top {
   right: auto !important;
   left: 20px !important;
-  bottom: 20px !important; /* Match the chat widget's bottom position */
+  bottom: -180px !important; /* Keep the original starting position */
+  transition: bottom 0.3s ease-in-out !important;
 }
 
 /* Ensure the car animation works correctly on the left side */
 .car-top.car-run {
   right: auto !important;
   left: 20px !important;
-  bottom: 20px !important;
 }
 
 /* Move the car down animation to work from the left side */
 .car-top.car-down {
   right: auto !important;
   left: 20px !important;
+}
+
+/* Show the button when the show class is added */
+.car-top.show {
   bottom: 20px !important;
 }
 
@@ -45,7 +49,10 @@
 @media (max-width: 767px) {
   .car-top {
     left: 10px !important;
-    bottom: 20px !important;
+  }
+
+  .car-top.show {
+    bottom: 10px !important;
   }
 
   #chat-container .chat-widget-container,
