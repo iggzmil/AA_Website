@@ -31,16 +31,37 @@
 
 /* iOS-specific fixes using CSS feature detection */
 @supports (-webkit-touch-callout: none) {
-  /* iOS-specific styles */
-  .bg-testimonial-custom {
+  /* iOS-specific styles for all parallax sections */
+  .bg-1,
+  .bg-testimonial-custom,
+  .bg-custom-divider,
+  .bg-premium-audio,
+  .bg-work-action {
     background-attachment: scroll !important;
     background-position: center center !important;
+    background-size: cover !important;
+    /* Add a background color to prevent grey areas */
+    background-color: #333333 !important;
+  }
+
+  /* Specific background images for each section */
+  .inner-intro.bg-1 {
+    background-image: url(../images/bg/01.jpg) !important;
   }
 
   .inner-intro.bg-testimonial-custom {
-    min-height: 350px !important;
-    /* Height is now controlled by section-height-fix.css */
-    /* Provide a fallback background image with a different format */
     background-image: url(../images/bg/03.jpg) !important;
+  }
+
+  .inner-intro.bg-custom-divider {
+    background-image: url(../images/bg/03.png) !important;
+  }
+
+  .inner-intro.bg-premium-audio {
+    background-image: url(../images/bg/4.jpg) !important;
+  }
+
+  .inner-intro.bg-work-action {
+    background-image: url(../images/bg/002.jpg) !important;
   }
 }
