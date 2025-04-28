@@ -1,0 +1,32 @@
+/**
+ * Section Height Fix
+ * This file adjusts the height of specific sections
+ */
+
+/* Set the height of all parallax sections to 600px */
+.inner-intro.bg-1,
+.inner-intro.bg-custom-divider,
+.inner-intro.bg-work-action,
+.inner-intro.bg-premium-audio {
+  height: 600px !important; /* Consistent height for all parallax sections */
+}
+
+/* Set the height of the testimonial section */
+.inner-intro.bg-testimonial-custom,
+#testimonial-parallax-1,
+#testimonial-parallax-2 {
+  height: 600px !important; /* Consistent height for all parallax sections */
+}
+
+/* Ensure this works on all devices */
+@media (max-width: 991px) {
+  .inner-intro.bg-1,
+  .inner-intro.bg-custom-divider,
+  .inner-intro.bg-work-action,
+  .inner-intro.bg-premium-audio,
+  .inner-intro.bg-testimonial-custom,
+  #testimonial-parallax-1,
+  #testimonial-parallax-2 {
+    height: 600px !important; /* Maintain the same height on mobile */
+  }
+}

@@ -72,6 +72,32 @@ blockquote::before {left: 20px; color: var(--cd-primary-color);}
     background-attachment: fixed;
 }
 
+.bg-custom-divider {
+    background: url(../images/bg/03.png);
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed; /* Changed back to fixed to restore parallax effect */
+}
+
+.bg-premium-audio {
+    background: url(../images/bg/4.jpg);
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed; /* Parallax effect */
+}
+
 /* Fix for bg-10 background image being cut off */
 .bg-10 {
     min-height: 600px; /* Ensure minimum height to show full background */

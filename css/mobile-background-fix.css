@@ -1,0 +1,46 @@
+/**
+ * Mobile Background Fix
+ * This file fixes background image issues on mobile devices, especially iOS
+ */
+
+/* Fix for testimonial background on mobile devices */
+@media (max-width: 991px) {
+  /* Override fixed attachment for all mobile devices */
+  .bg-testimonial-custom,
+  .bg-custom-divider,
+  .bg-premium-audio {
+    background-attachment: scroll !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  /* Testimonial section height is now controlled by section-height-fix.css */
+  .inner-intro.bg-testimonial-custom {
+    min-height: 300px !important; /* Minimum height as fallback */
+    /* Height is now controlled by section-height-fix.css */
+  }
+
+  /* Hide the second testimonial section on mobile */
+  .inner-intro.bg-testimonial-custom + .inner-intro.bg-testimonial-custom {
+    display: none !important;
+  }
+}
+
+/* iOS-specific fixes using CSS feature detection */
+@supports (-webkit-touch-callout: none) {
+  /* iOS-specific styles */
+  .bg-testimonial-custom {
+    background-attachment: scroll !important;
+    background-position: center center !important;
+  }
+
+  .inner-intro.bg-testimonial-custom {
+    min-height: 350px !important;
+    /* Height is now controlled by section-height-fix.css */
+    /* Provide a fallback background image with a different format */
+    background-image: url(../images/bg/03.jpg) !important;
+  }
+}

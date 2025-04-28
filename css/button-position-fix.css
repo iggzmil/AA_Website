@@ -1,0 +1,58 @@
+/**
+ * Button Position Fix
+ * This file adjusts the positions of the back-to-top button and chat icon
+ */
+
+/* Move the back-to-top car button to the left side and align with chat widget */
+.car-top {
+  right: auto !important;
+  left: 20px !important;
+  bottom: 20px !important; /* Match the chat widget's bottom position */
+}
+
+/* Ensure the car animation works correctly on the left side */
+.car-top.car-run {
+  right: auto !important;
+  left: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Move the car down animation to work from the left side */
+.car-top.car-down {
+  right: auto !important;
+  left: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Move the chat icon all the way to the right */
+#chat-container .chat-widget-container,
+.tde-chat-minimized,
+.tde-chat-container,
+.tde-chat-widget,
+.tde-chat-widget .tde-chat-minimized {
+  right: 20px !important;
+  left: auto !important;
+}
+
+/* Direct override for the chat widget minimized button */
+.tde-chat-minimized {
+  right: 20px !important;
+  left: auto !important;
+  position: fixed !important;
+}
+
+/* Ensure proper spacing between elements on mobile */
+@media (max-width: 767px) {
+  .car-top {
+    left: 10px !important;
+    bottom: 20px !important;
+  }
+
+  #chat-container .chat-widget-container,
+  .tde-chat-minimized,
+  .tde-chat-container,
+  .tde-chat-widget,
+  .tde-chat-widget .tde-chat-minimized {
+    right: 10px !important;
+  }
+}

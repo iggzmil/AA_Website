@@ -1,0 +1,27 @@
+/**
+ * Testimonial Background Fix
+ * This file changes the background color of the testimonial section to match the About Us section
+ */
+
+/* Change the testimonial section background to match the About Us section */
+.testimonial-4.white-bg {
+  background-color: #f6f6f6 !important; /* Match the About Us section background color */
+}
+
+/* Ensure text is black for better readability */
+.testimonial-4 p,
+.testimonial-4 .section-title span,
+.testimonial-4 .section-title h2 {
+  color: #000000 !important;
+}
+
+/* Ensure the separator is visible */
+.testimonial-4 .section-title .separator:before,
+.testimonial-4 .section-title .separator:after {
+  background: #db2d2e !important;
+}
+
+/* Ensure quote icon is visible */
+.testimonial-4 .testimonial-block i.fa-quote-left {
+  color: #db2d2e !important;
+}
