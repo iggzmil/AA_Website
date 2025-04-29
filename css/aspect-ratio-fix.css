@@ -1,0 +1,63 @@
+/**
+ * Aspect Ratio Fix
+ * This file makes minimal adjustments to optimize the hero section for 16:9 screens
+ * while preserving the original look on wide screens
+ */
+
+/* Only apply specific fixes to 16:9 aspect ratio screens */
+@media (min-aspect-ratio: 15/9) and (max-aspect-ratio: 17/9) {
+  /* Standard 16:9 screens */
+  .banner.section-bg-half {
+    background-image: linear-gradient(to right, transparent 0%, transparent 35%, #15181f 35%, #15181f 100%) !important;
+    padding-top: 180px !important;
+    padding-bottom: 120px !important;
+  }
+
+  .banner.section-bg-half .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .banner.section-bg-half .banner-car {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: -40px;
+  }
+
+  /* Adjust text image position specifically for 16:9 */
+  .banner .banner-bg-text {
+    position: relative;
+    top: -30px !important;
+    z-index: 1;
+  }
+}
+
+/* Minimal adjustments for very wide screens to prevent extreme stretching */
+@media (min-aspect-ratio: 21/9) {
+  /* Ultra-wide screens */
+  .banner.section-bg-half .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Ensure text content is responsive on all screens */
+.banner.section-bg-half .text-center.mt-4 h2 {
+  font-size: calc(24px + 1.5vw);
+  line-height: 1.2;
+}
+
+/* Ensure images are responsive */
+.banner.section-bg-half img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Vertical height adjustments based on screen height */
+@media (max-height: 700px) {
+  /* For shorter screens */
+  .banner.section-bg-half {
+    padding-top: 150px !important;
+    padding-bottom: 100px !important;
+  }
+}
