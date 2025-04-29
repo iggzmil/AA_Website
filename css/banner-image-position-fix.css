@@ -1,0 +1,31 @@
+/**
+ * Banner Image Position Fix
+ * This file adjusts the position of the text image in the hero section
+ * to reduce overlap with the car image
+ */
+
+/* Move the text image up to reduce overlap - adjusted to 45% of the original value */
+.banner .banner-bg-text {
+  position: relative;
+  top: -36px; /* Move up by 36px (45% of the original 80px) */
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Adjust for different screen sizes */
+@media (max-width: 1200px) {
+  .banner .banner-bg-text {
+    top: -27px; /* 45% of the original -60px */
+  }
+}
+
+@media (max-width: 991px) {
+  .banner .banner-bg-text {
+    top: -22px; /* 45% of the original -50px */
+  }
+}
+
+@media (max-width: 767px) {
+  .banner .banner-bg-text {
+    top: -18px; /* 45% of the original -40px */
+  }
+}
